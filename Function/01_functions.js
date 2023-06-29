@@ -29,7 +29,7 @@ function userlogedIn(user) {
   }
   return `${user} just LogedIn`;
 }
-// console.log(userlogedIn());
+console.log(userlogedIn());
 
 function totralprise(...num1) {
   return num1;
