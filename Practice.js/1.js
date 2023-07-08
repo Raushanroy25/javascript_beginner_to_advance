@@ -26,3 +26,32 @@ function greeting(myName) {
   console.log(`Hello ${myName}`);
 }
 greeting();
+
+const num = [
+  1,
+  23,
+  7,
+  8,
+  9,
+  4,
+  5,
+  69,
+  7,
+  8,
+  5,
+  2,
+  5,
+  ,
+  5,
+  68,
+  9,
+  9,
+  5,
+  6,
+  8,
+  ,
+  25,
+  6,
+  5,
+  5,
+];

@@ -1,7 +1,7 @@
 const name = "Raushan";
 const repoCount = 50;
 
-console.log(`May Name is ${name} and my repoCount = ${50}`);
+// console.log(`May Name is ${name} and my repoCount = ${repoCount}`);
 
 const gameName = "raushanrc";
 console.log(gameName.length);
