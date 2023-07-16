@@ -5,13 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event with chai or code</title>
   </head>
-  <body>
-    <ul>
-      <li><img src="" alt="" /></li>
-      <li><img src="" alt="" /></li>
-      <li><img src="" alt="" /></li>
-      <li><img src="" alt="" /></li>
-      <li><img src="" alt="" /></li>
-    </ul>
+
+   <body style="background-color: rgb(21, 16, 16)">
+    <ul id="images">
+      <li>
+        <img width="200px" height="200px" id="cat" src="./img/cat.jpg" alt="" />
+      </li>
+      <img width="200px" height="200px" id="city" src="./img/city.jpg" alt="" />
+      </li>
+      <img width="200px" height="200px" id="desert" src="./img/desert.jpg" alt="" />
+      </li>
+      <img width="200px" height="200px" id="dog" src="./img/dog.jpg" alt=""/>
+      </li>
+      <img width="200px" height="200px" id="roy" src="./img/linkdin.jpg" alt="" />
+      </li>
+      <img width="200px" height="200px" id="sky" src="./img/sky.jpg" alt="" />
+      </li>
+     <li ><a style="color: aliceblue;" id="link" href="https://www.google.com/">Google</a></li>
   </body>
+  <script>
+    // attacheEvent 
+  // jQuery on
+  // type , timestamp , defailtPrevented , target
+   // toElement , srcElement , currentTarget, clientX, clientY , screenX, screenY
+   // altkey , ctrlkey , shiftkey , keyCode
+
+
+   // false = bubling  : bottom to top
+   // true = capturing mode  : top to bottom
+
+
+  // document.getElementById('dog').onclick= function(){
+  //   alert('dog clicked')
+  // }
+  // document.getElementById('dog').addEventListener('click' , function(){
+  //  alert('dog clicked again')
+  // })
+
+  // document.getElementById('images').addEventListener('click' , function(){
+  //   console.log('clicked inside the ul')
+   
+  //  },false )
+  //  document.getElementById('cat').addEventListener('click' , function(){
+  //   console.log('cat clicked')
+   
+  //  },false )
+//    document.getElementById('images').addEventListener('click' , function(){
+//     console.log('clicked inside the ul')
+   
+//    },true )
+//    document.getElementById('sky').addEventListener('click' , function(e){
+//     console.log('cat clicked')
+//    e.stopPropagation()
+//    },true )
+
+
+//    document.getElementById('link').addEventListener ("click", function(e){
+   
+//     e.preventDefault()
+//  console.log('google clicked')
+//    },false)
+  
+
+document.querySelector('#ima ges').addEventListener('click',function(e){
+console.log(e.target.parentNode)
+let removeIt = e.target.parentNode
+removeIt.remove()
+})
+  
+  </script>
 </html>
+ 
