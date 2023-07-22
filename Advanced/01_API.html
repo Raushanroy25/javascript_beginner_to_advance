@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .git {
+        height: 400px;
+        width: 400px;
+        display: flex;
+        border: 5px solid;
+        background: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      0 UNSENT Client has been created. open() not called yet. 1 OPENED open()
+      has been called. 2 HEADERS_RECEIVED send() has been called, and headers
+      and status are available. 3 LOADING Downloading; responseText holds
+      partial data. 4 DONE The operation is complete.
+    </div>
+
+    <div class="git"></div>
+    <button type="">Click</button>
+  </body>
+  <script>
+    const requestUrl = "https://api.github.com/users/Raushanroy25";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requestUrl);
+    xhr.onreadystatechange = function () {
+      console.log(xhr.readyState);
+      if (xhr.readyState === 4) {
+        const Data = JSON.parse(this.responseText);
+        console.log(Data);
+        console.log(Data.company);
+      }
+    };
+    xhr.send();
+  </script>
+</html>
