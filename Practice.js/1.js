@@ -27,8 +27,19 @@
 // }
 // greeting();
 
-let a = "Age";
-let person = {
-  [a]: 30,
-};
-console.log(person);
+// let a = "Age";
+// let person = {
+//   [a]: 30,
+// };
+// console.log(person);
+
+var a = 10;
+{
+  var a = -10;
+}
+let b = a;
+{
+  let b = -20;
+}
+
+console.log(b);
